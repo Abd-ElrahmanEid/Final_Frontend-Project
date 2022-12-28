@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./images/coronavirus.png">
+    
+
+    <style>
+        /* style accordion  */
+        .accordion-button::after {
+          background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+          transform: scale(.7) !important;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+          background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+        }
+
+        /* Scroll */
+        .hide{
+            height: 55px;
+            width: 50px;
+            border-radius: 50px;
+            background-color: white;
+            border: 3px solid crimson;
+            position: fixed;
+            z-index: 1;
+            right: 35px;
+            top: 80vh;
+            display: none;
+            scroll-behavior:smooth;
+        }
+
+        
+    </style>
+
+
+    <title>Home</title>
+
+
+</head>
+<body style="background-color:rgb(247, 249, 254); background-image: url(./images/shape-a.png); position: relative;">
+
+
+    <!---- Scroll -->
+    <a class="hide" href="#home">
+        <i class="fa-solid fa-arrow-up fs-4" style="color: crimson; padding: 11px 13px;"></i>
+    </a>
+
+
+    <!---Navbar-->
+    <div class="container-fluid position-fixed" style="z-index: 999;">
+        <nav class="navbar navbar-expand-lg" style="background-color:rgb(247, 249, 254);">
+            <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4" >C<i class="fa-solid fa-virus text-danger"></i>VID19</a>
+
+
+            <button class="navbar-toggler" id="zorar" type="button" aria-expanded="false" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="collapse navbar-collapse ">
+                    <ul class="navbar-nav  me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly" >
+
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold"  href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold"  href="#about">About Corona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold"  href="#symptoms">Symptoms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold"  href="#prevention">Prevention</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold"  href="#treatment">Treatment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold"  href="#faqs">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold"  href="#news">News</a>
+                        </li>
+                        <a class="btn btn-primary px-4 fw-bold" href="#dodont" style="border-radius: 15px;" >Do & Don't</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div> 
+
+    <br><br><br><br><br><br>
+
+
+
+
+
+    <!---first section--- Header --->
+    <div class="container" id="home">
+
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" >
+
+
+
+                <div class="d-flex justify-content-center text-center align-items-center" >
+
+                    <h1 class="fw-bold" style="font-size: 70px; color: rgb(80, 101, 142);">CORONA</h1>
+                    <div>
+                        <p class="fw-bold" style="font-size: 25px; color: crimson;">COVID19</p>
+                        <p class="fw-bold" style="font-size: 25px; color: rgb(80, 101, 142);">VIRUS</p>
+                    </div>
+                    
+                </div> <br>
+
+                <div class="d-flex justify-content-center fw-lighter fst-italic ">
+                    <p style="width: 80%;">
+                        The coronavirus ( COVID 19) was first reported in Wuhan, Hubei, China in December 2019, the outbreak was later recognized as a pandemic by the world health organization ( WHO ) on '1 March 2020.
+                    </p>
+                </div> <br><br>
+
+
+                <div class="d-flex justify-content-evenly">
+
+                    <div class="btn btn-primary fw-bold px-5 py-2 col-xl-6  " style="border-radius: 20px;">How To Protect
+                        <img src="./images/2.png" alt="" width="20px" height="16px" style="padding-left: 4px;" >
+                    </div>
+
+                    <div class="btn fw-bold px-4 py-1 col-xl-6 " style="width: 200px; background-color: rgb(247, 249, 254); color: #0275d8
+                    ;">
+                    About COVID-19
+                    <img src="./images/3.png" alt="" width="17px" height="16px" style="padding-left: 4px;">
+
+                    </div>
+
+                </div> <br><br>
+
+
+
+                <div class="d-flex justify-content-evenly ">
+                    <div>
+                        <p class="fw-lighter fst-italic">WORLDWIDE CASES:</p>
+                        <p class="fw-bold fs-4" >8,949,671</p>
+                    </div>
+                    <div>
+                        <p class="fw-lighter fst-italic">DEATHS:</p>
+                        <p class="fw-bold fs-4" id="number1">1648</p>
+                    </div>
+                    <div>
+                        <p class="fw-lighter fst-italic" >RECOVERD:</p>
+                        <p class="fw-bold fs-4">4,556,091</p>
+                    </div>
+
+
+                </div> <br>
+
+                <p class="d-flex justify-content-center fw-lighter fst-italic">*Last Updated: June 18,2020, 09:24 AM Egypt-Cairo.</p>
+
+                
+                
+                <br><br><br>
+
+            </div>
+
+            <!--jelly-nose image-->
+
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex flex-column">
+
+                <img  src="./images/header-a.png" alt="" >
+            </div>
+        </div>
+
+    </div> <br><br><br>
+
+
+
+
+    <!---second section-- about the disease -->
+    <div class="container" id="about">
+        <div class="row">
+
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 ">
+
+                <p class="text-primary fs-5 fw-bold">ABOUT THE DISEASE</p>
+                <h2 class="fs-1 fw-bold" style="color: rgb(80, 101, 142);">CORONAVIRUS (COVID19)</h2> <br>
+
+                <p class="fs-5"> <span class="fw-bold">COVID-19 is a new illness that can affect your lungs and airways.</span> It's caused by  a virus called coronavirus. It was discovered in December 2019 in Wuhan, Hubei, China.</p> <br>
+
+                <p class="fs-5">Common sings of infection include respiratory symptoms, fever, cough, shortness of breath and breathing difficulities. In more severe cases, infection can cause pneumonia, severe acute respiratory syndrome, kidney failure and even death.</p> <br>
+
+                <p class="fs-5">Standard recommendation to prevent infection spread include regular hand washing, covering mouth and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with anyone showing symptoms of respiratory illness such as coughing and sneezing.</p>
+
+            </div>
+
+            <!---------------------------------------------------------->
+
+
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center pt-5 ">
+
+                <div class="accordion w-75 w-md-75">
+
+
+                    <div class="accordion-item text-center text-primary py-3 mb-3 " data-aos="fade-up">
+                      <h5 class="fw-bold">What you need to know</h5> 
+                    </div>
+
+
+
+                    <!---1-->
+                    <div class="accordion-item mb-2 " data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingone">
+                        <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseone" > How Coronavirus Spread ?</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseone" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingone">
+
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                        </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!---2-->
+                    <div class="accordion-item mb-2" data-aos="fade-up">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingtwo">
+                        <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetwo" >Symptoms Of Coronavirus</button>
+                    </h2>
+                    <div id="panelsStayOpen-collapsetwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingtwo">
+
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                        </div>
+
+                    </div>
+                    </div>
+
+
+
+                    <!---3-->
+                    <div class="accordion-item mb-2" data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingthree">
+                          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsethree" >How to protect yourself ?</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsethree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingthree">
+  
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                            </div>
+  
+                        </div>
+                      </div>
+
+
+
+                    <!---4-->
+                    <div class="accordion-item mb-2" data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+                            <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" >Treatment for Coronavirus</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
+
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque. 
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+
+                    <!---5-->
+                    <div class="accordion-item mb-2" data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+                            <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" >Myth-Busters of Coronavirus</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfive">
+
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                                </div>
+                        </div>
+                    </div>
+
+            
+
+                      <!---6-->
+                      <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+                          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" > Questions & Answers !</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingsix">
+  
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                            </div>
+                        </div>
+                      </div>
+
+            
+                  </div>
+            </div> <br><br>
+
+
+
+        </div>
+    </div> <br><br><br><br>
+
+
+
+
+
+    <!---third section-- Cards -->
+    <div class="container">
+
+            <div class="text-center">
+
+                <p class="fs-5 fw-bold text-primary">HOW CORONAVIRUS IS SPREAD</p>
+                <h1 class="fs-1 fw-bold" style="color: rgb(80, 101, 142) ;">TRANSMISSION OF COVID-19</h1> <br>
+                <P>Because it's a new illness, We do not know exactly how coronavirus spreads <br> from person to person, Similar viruses are spread in cough droplets </P>
+
+            </div> <br><br><br>
+
+
+            <div class="row d-flex justify-content-evenly">
+
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 mb-sm-5 card" data-aos="fade-right" style="width: 22rem;">
+                        <img class="card-img-top border-5 border-bottom border-primary" style="background-color: rgb(247, 249, 254);" src="./images/spread-a.png" >
+                        <div class="card-body p-5">
+                        <p class="card-text">
+                            <span class="fw-bold text-primary">Person-To-person spread as close contact with infected.</span> The Coronavirus is thought to spread mainly from person to person. This can happen between people who are in close contact with one another.
+                        </p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 mb-sm-5 card" data-aos="fade-up" style="width: 22rem;">
+                        <img class="card-img-top border-5 border-bottom border-primary" style="background-color: rgb(247, 249, 254);" src="./images/spread-b.png" >
+                        <div class="card-body p-5">
+                            <p class="card-text">
+                            <span class="fw-bold text-primary">Touching or contact with infected surfaces or objects.</span><br>A person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 mb-sm-5 card" data-aos="fade-left" style="width: 22rem;">
+                            <img class="card-img-top border-5 border-bottom border-primary" style="background-color: rgb(247, 249, 254);" src="./images/spread-c.png" >
+                            <div class="card-body p-5">
+                                <p class="card-text"><span class="fw-bold text-primary">Droplets that from infected person coughs or sneezes.</span><br>The coronavirus is thought to spread mainly from person to person. This can happen between people who are in close contact with one another.</p>
+                            </div>
+                    </div>
+
+                </div> <br><br>
+
+                <div class="d-flex justify-content-center">
+                    <div class="btn btn-primary px-5 fw-bold" style="border-radius: 20px;">
+                        <i class="fa-regular fa-circle-question fs-5 px-3"></i>Have question about Spreading ?</div>
+                </div>
+
+
+    </div> <br><br><br><br><br>
+
+
+
+
+
+
+    <!---fourth section-- Symptoms -->
+    <div class="container" id="symptoms">
+
+        <div class="text-center">
+
+            <p class="fs-5 fw-bold text-primary">WHAT ARE THE SYMPTOMS OF COVID-19</p>
+            <h1 class="fs-1 fw-bold" style="color: rgb(80, 101, 142) ;">SYMPTOMS OF CORONAVIRUS</h1> <br>
+            <P>The most common symptoms of COVID-19 are fever, tiredness, and dry cough, some<br>patients may have aches and pains, nasal congestion, runny nose, sore throat or<br>diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may<br>   appear 2-14 days after exposure.</P>
+
+        </div> <br><br><br><br>
+
+
+        <div class="row d-flex justify-content-evenly">
+
+            <div class="col-xl-3 col-lg-3 col-md-12 mb-md-5 mb-sm-5" data-aos="fade-right" style="background-color: white;" >
+                <div class="d-flex justify-content-end">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="100px"  src="./images/symptom-a.png" alt="">
+                    </div>
+                </div>
+                
+                <p class="px-4"> <span class="text-primary fw-bold fs-4">Fever -</span><br> <span class="fw-bold">High Fever -</span>
+                    This means you feel hot to touch on your chest or back (you do not need to measure your temperature). it is a common sign and also may appear in 2-10 days if you affected.
+                
+                </p>
+            </div>
+            
+            
+            
+            <div class="col-xl-3 col-lg-3 col-md-12 mb-md-5 mb-sm-5" data-aos="fade-down" style="background-color: white;">
+                <div class="d-flex justify-content-end">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="100px"  src="./images/symptom-b.png" alt="">
+                    </div>
+                </div>
+                
+                <p class="px-4"> <span class="text-primary fw-bold fs-4">Cough -</span><br> <span class="fw-bold">Continuous cough -</span>
+                    This means coughing a lot for more than an hour, or 3 or more coughnig episods in 24 hours (if you usually have a cough, it may be worse than usual).
+                
+                </p>
+            </div>
+
+
+
+            <div class="col-xl-3 col-lg-3 col-md-12 mb-md-5 mb-sm-5" data-aos="fade-left" style="background-color: white;">
+                <div class="d-flex justify-content-end">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="100px"  src="./images/symptom-c.png" alt="">
+                    </div>
+                </div>
+                
+                <p class="px-4"><span class="text-primary fw-bold fs-4">Breath -</span><br> <span class="fw-bold">Difficulty breath -</span>
+                    Around 1 out of  every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing or shortness of breath. 
+                </p>
+            </div>
+
+            
+        </div><br><br><br>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 mb-lg-5 mb-md-5 mb-sm-5">
+
+                    <p class="fw-lighter fst-italic text-center">
+                        <i class="fa-solid fa-triangle-exclamation text-primary fs-1"></i>
+                        <span class="fw-bold text-primary">Stay at home and call your doctor:</span>
+                        if you think you have been exceed to COVID-19 <br>and develop a fever any symptoms, such as cough or difficulty breathing.<br>call your healthcare provider as soon as possible for medical advice. 
+                    </p>
+
+                </div>
+
+
+
+                <div class="col-xl-5">
+
+                    <div class="d-flex justify-content-center">
+                        <div class="btn btn-primary px-5 fw-bold" style="border-radius: 20px;">
+                            <i class="fa-regular fa-circle-question fs-5 px-3"></i>Have question ? Find Answer</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div> <br><br><br><br><br><br>
+
+
+
+
+
+    <!---fifth section-- prevention -->
+    <div class="container" id="prevention">
+
+        <div class="text-center">
+
+            <p class="fs-5 fw-bold text-primary">HOW TO PROTECT YOURSELF ?</p>
+            <h1 class="fs-1 fw-bold" style="color: rgb(80, 101, 142) ;">PREVENTION & ADVICE</h1> <br>
+            <P>There is currently no vaccine to prevent coronavirus disease (COVID-19).<span class="fw-bold"> The best way to <br> prevent illness is to avoid being exposed to this virus.</span> Stay aware of the latest information on <br> the COVID-19 outbreak, available on the WHO website and through your national and local public <br> health authority.</P>
+
+        </div> <br><br><br><br>
+
+
+        <div class="row d-flex justify-content-evenly">
+
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-md-5 mb-sm-5" >
+                <div class="d-flex justify-content-center">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="120px"  src="./images/advice-a.png" alt="">
+                    </div>
+                </div> <br>
+                
+                <p class="px-4 text-center"><span class="fw-bold">Wash Your Hand Frequently</span><br>
+                    Requlatry and thoroughly<br>clean your hands with an<br>alcohol-based hand rub or<br>wash them with soap and<br>water for at least 20 seconds.
+                
+                </p>
+            </div>
+            
+            
+            
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-md-5 mb-sm-5">
+                <div class="d-flex justify-content-center">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="120px"  src="./images/advice-b.png" alt="">
+                    </div>
+                </div> <br>
+                
+                <p class="px-4 text-center"><span class="fw-bold">Maintain social distancing</span><br>
+                    Maintain at least 1 meter (3<br>feet) distance between<br> yourself & anyone who is<br> coughing or sneezing.If you<br>are too close, get chance to infected.
+                
+                </p>
+            </div>
+
+
+
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-md-5 mb-sm-5">
+                <div class="d-flex justify-content-center">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="120px"  src="./images/advice-c.png" alt="">
+                    </div>
+                </div> <br>
+                
+                <p class="px-4 text-center"><span class="fw-bold">Avoid touching face</span><br>
+                    Hands touch many surfaces<br>and can pick up viruses. So,<br>hands can transfer the virus to<br>your eyes, nose or mouth and<br>can make you sick.
+                </p>
+            </div>
+
+
+            <div class="col-xl-3 col-lg-3 col-md-6 mb-md-5 mb-sm-5">
+                <div class="d-flex justify-content-center">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="120px"  src="./images/advice-d.png" alt="">
+                    </div>
+                </div> <br>
+                
+                <p class="px-4 text-center"><span class="fw-bold">Practice respiratory hygiene</span><br>
+                    Maintain good respiratory<br>hygiene as covering your<br>mouth & nose with your bent<br> elbow or tissue when cough or <br> sneeze.
+                </p>
+            </div>
+
+            
+        </div><br><br>
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-6 col-lg-6 col-md-6">
+
+                    <div class="d-flex justify-content-center mb-sm-5">
+                        <div class="btn btn-primary px-5 fw-bold" style="border-radius: 20px;">
+                            Check how you wash hand <i class="fa-solid fa-arrow-right px-3"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-xl-6 col-lg-6 col-md-6">
+
+                    <div class="d-flex justify-content-center">
+                        <div class="btn text-primary px-5 fw-bold" style="border-radius: 20px;">
+                            Q&A ? on Coronavirus<i class="fa-solid fa-arrow-right px-3"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+        </div>
+
+
+    </div> <br><br><br><br><br><br>
+
+
+
+
+
+    <!---sixth section-- Steps from doctor -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-7 col-lg-12 col-md-12 mb-lg-5 mb-md-5 mb-sm-5">
+
+
+               <h1 class="text-lg-center" style="color: rgb(80, 101, 142);">- Take Steps To Protect Others -</h1><br><br>
+
+
+               <div class="d-flex justify-content-lg-center">
+                <i class="fa-solid fa-circle-check px-2 pt-1 text-success"></i>
+                <p><span class="fw-bold">Stay home if you're sick -</span> Stay home if you are sick, except to medical<br>care.</p>
+               </div>
+
+               <div class="d-flex justify-content-lg-center">
+                <i class="fa-solid fa-circle-check px-2 pt-1 text-success"></i>
+                <p><span class="fw-bold">Cover your mouth and nose -</span> With a tissue when you cough or sneeze<br>(throw used tissues in the trash) or use the inside of your elbow.</p>
+               </div>
+
+               <div class="d-flex justify-content-lg-center">
+                <i class="fa-solid fa-circle-check px-2 pt-1 text-success"></i>
+                <p><span class="fw-bold">Wear a facemask if you are -</span> You should wear facemask when you are<br> around other people(e.g, sharing a room or vehicle) and before you <br>enter a healthcare provider's.</p>
+               </div>
+
+               <div class="d-flex justify-content-lg-center">
+                <i class="fa-solid fa-circle-check px-2 pt-1 text-success"></i>
+                <p><span class="fw-bold">Clean AND disinfect frequently touched surfaces daily -</span> This include<br> phones, tables, light switches, door knobs, countertops, handles, desks,<br>toilets, faucets, and sinks.</p>
+               </div>
+
+               <div class="d-flex justify-content-lg-center">
+                <i class="fa-solid fa-circle-check px-2 pt-1 text-success"></i>
+                <p><span class="fw-bold">Clean the dirty surfaces -</span>We use detergent or soap and water prior to<br>disinfection. </p>
+               </div>
+
+               <div class="d-flex justify-content-lg-center">
+                <i class="fa-solid fa-circle-check px-2 pt-1 text-success"></i>
+                <p><span class="fw-bold">Stay informed about the local COVID-19 situation -</span>Get updated<br>a information about local COVID-19 activity from <a href="https://epicentre.org.za/" target="_blank">Public Health officials.</a></p>
+               </div>
+
+               <div class="d-flex justify-content-lg-center">
+                <i class="fa-solid fa-circle-check px-2 pt-1 text-success"></i>
+                <p><span class="fw-bold">Dedicated, lined trash can -</span>possible, dedicate a lined trash can for the<br>ill person. Use gloves when removing garbage bags, and handling &<br>disposing of trash. </p>
+               </div>
+
+            </div>
+
+
+            <div class="col-xl-5 col-lg-12 col-md-12 text-center">
+                <br><img src="./images/steps.png" alt="" height="500px" width="400">
+            </div>
+
+        </div>
+    </div> <br><br><br><br>
+
+
+                        <!------follow steps for hands---->
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <h1 class="fs-1 fw-bold" style="color: rgb(80, 101, 142) ;">Follow Steps To Wash Hands</h1> <br>
+            <p class="fs-6 fw-bold text-primary">Why Do I Need to Wash Hand ?</p>
+
+        </div> <br><br><br><br>
+
+
+
+        <div class="row">
+
+
+            <div class="col-xl-2 col-lg-2 col-md-6 mb-md-5 col-sm-6  mb-sm-5">
+                <div class="d-flex justify-content-center">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="110px"  src="./images/hand-a.png" alt="">
+                    </div>
+                </div> <br>
+                
+                <p class="px-4 text-center fw-bold">Soap on hand</p>
+            </div>
+            
+            
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6  mb-sm-5">
+                <div class="d-flex justify-content-center">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="110px"  src="./images/hand-b.png" alt="">
+                    </div>
+                </div> <br>
+                
+                <p class="px-4 text-center fw-bold">Plam on plam</p>
+            </div>
+
+
+            <div class="col-xl-2 col-lg-2 col-md-6 mb-md-5 col-sm-6 mb-sm-5">
+                <div class="d-flex justify-content-center">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="110px"  src="./images/hand-c.png" alt="">
+                    </div>
+                </div> <br>
+                
+                <p class="px-4 text-center fw-bold">Between fingers</p>
+            </div>
+
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 mb-sm-5">
+                <div class="d-flex justify-content-center">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="110px"  src="./images/hand-d.png" alt="">
+                    </div>
+                </div> <br>
+                
+                <p class="px-4 text-center fw-bold">Back to hands</p>
+            </div>
+
+            <div class="col-xl-2 col-lg-2 col-md-6 mb-md-5 col-sm-6 mb-sm-5">
+                <div class="d-flex justify-content-center">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="110px"  src="./images/hand-e.png" alt="">
+                    </div>
+                </div> <br>
+                
+                <p class="px-4 text-center fw-bold">Clean with water</p>
+            </div>
+
+
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 mb-sm-5">
+                <div class="d-flex justify-content-center">
+                    <div class="w-25 pt-2">
+                        <img class="rounded-circle shadow-lg" height="110px"  src="./images/hand-f.png" alt="">
+                    </div>
+                </div> <br>
+                
+                <p class="px-4 text-center fw-bold">Focus on wirst</p>
+            </div>
+
+            
+        </div>
+        
+
+    </div>  <br><br><br><br><br>
+
+
+
+
+    <!----Seventh section ( blue )-->
+
+    <div class="container-fluid" id="treatment" style="background-color: rgb(56, 121, 205); background-image: url(./images/shape-a.png); background-size: cover;">
+
+        <div class="row">
+
+            <div class="col-xl-6 col-lg-6 px-lg-5 px-sm-5 d-flex justify-content-center py-5 mt-5">
+            
+
+                <div>
+                    <p class="fw-bold text-light">BE CAREFULL & STAY SAFE</p>
+                    <h1 class="fs-2 fw-bold text-light">TREATMENT FOR CORONAVIRUS</h1> <br>
+                    <P class="text-light"><span class="fw-bold">To date,there is no vaccine and no specific antiviral medicine to<br>prevent or treat COVID-2019.</span> However, those affected should receive care<br>to relieve symptoms. People with serious illness should be hospitalized. Most<br>patients recover thanks to supportive care.</P><br>
+
+                    <p class="text-light">
+                        Antibiotics do not help, as they do not work against viruses. Treatment aims <br> to relieve the symptoms while your body fights the illness. You'll need to stay <br> in isolation, away from other people, untill you have recovered.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-xl-6 col-lg-6 py-5">
+
+                <div class="p-5 m-auto" style="width: 400px; height: 700px; background-color: rgb(27, 71, 161);">
+
+                    <p class="text-light fw-bold fs-5">Self-Care :</p>
+                    <p class="text-light">If you have mild symptoms, stay at haome<br>untill you've recovered. You can relieve your<br>symptoms if you : </p>
+
+                    <p class="text-light"><i class="fa-solid fa-arrow-right px-3 text-light"></i>Rest and Sleep.</p>
+                    <p class="text-light"><i class="fa-solid fa-arrow-right px-3 text-light"></i>Keep Warm.</p>
+                    <p class="text-light"><i class="fa-solid fa-arrow-right px-3 text-light"></i>Drink plenty of liquids.</p>
+                    <p class="text-light"><i class="fa-solid fa-arrow-right px-3 text-light"></i>Use room humidifier hot shower.</p> <br>
+
+                    <p class="text-light fw-bold fs-5">Medical Treatment :</p>
+                    <p class="text-light">If you develop a fever, cough, and have<br> difficulty breathing, promptly seek medical<br>care. Call in advance and tell your health<br> provider of any recent travel or recent<br> contact with travelers.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div> <br><br><br><br><br><br><br>
+
+
+
+
+
+    <!----eight section -- Do & Don't -->
+
+    <div class="container" id="dodont">
+
+        <div class="text-center">
+
+            <p class="fs-5 fw-bold text-primary">DO'S & DON'TS</p>
+            <h1 class="fs-1 fw-bold" style="color: rgb(80, 101, 142) ;">PROTECT YOURSELF !</h1> <br>
+            <P>The best thing you can do now is plan for how you can adapt your daily routine. Take few steps to protect yourself as clean your hands<br>often, Avoid close contact, Cover coughs and sneezes, clean daily used surfaces etc. The best way to prevent illness is to avoid being<br>exposed to this virus.</P>
+
+        </div> <br><br><br><br>
+
+
+        <div class="row">
+
+            <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+
+                <div class="d-flex justify-content-end justify-content-sm-center" data-aos="fade-up">
+                    <p class="text-danger fw-bold py-5 px-3 text-lg-center">Avoid Close Contact</p>
+                    <div style="width: 100px; height: 100px; border: solid 4px red; border-radius: 50%;">
+                        <img src="./images/donts-a.png" width="100px" height="90px" alt="">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end justify-content-sm-center" data-aos="fade-up">
+                    <p class="text-danger fw-bold py-5 px-3 text-lg-center">Avoid Close Contact</p>
+                    <div style="width: 100px; height: 100px; border: solid 4px red; border-radius: 50%;">
+                        <img src="./images/donts-b.png" width="100px" height="90px" alt="">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end justify-content-sm-center " data-aos="fade-up">
+                    <p class="text-danger fw-bold py-5 px-3 text-lg-center">Avoid Close Contact</p>
+                    <div style="width: 100px; height: 100px; border: solid 4px red; border-radius: 50%; z-index: 999;">
+                        <img src="./images/donts-c.png" width="100px" height="85px" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-6 col-lg-4 col-md-12 col-sm-12 md-sm-5 d-flex justify-content-center">
+                <img src="./images/protect.png" alt="" height="450px">
+            </div>
+
+
+            <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+
+                <div class="d-flex justify-content-start justify-content-sm-center" data-aos="fade-up">
+                    <div style="width: 100px; height: 100px; border: solid 4px green; border-radius: 50%;">
+                        <img src="./images/dos-a.png" width="100px" height="90px" alt="">
+                    </div>
+                    <p class="text-success fw-bold py-5 px-3 text-lg-center">Wash Your Hands</p>
+                </div>
+
+
+                <div class="d-flex justify-content-start justify-content-sm-center" data-aos="fade-up">
+                    <div style="width: 100px; height: 100px; border: solid 4px green; border-radius: 50%;">
+                        <img src="./images/dos-b.png" width="100px" height="90px" alt="">
+                    </div>
+                    <p class="text-success fw-bold py-5 px-3 text-lg-center">Drink Much Water</p>
+                </div>
+
+
+                <div class="d-flex justify-content-start justify-content-sm-center" data-aos="fade-up">
+                    <div style="width: 100px; height: 100px; border: solid 4px green; border-radius: 50%;">
+                        <img src="./images/dos-c.png" width="100px" height="100px" alt="">
+                    </div>
+                    <p class="text-success fw-bold py-5 px-3 text-lg-center">Use The Face Mask</p>
+                </div>
+                
+
+            </div>
+
+
+        </div>
+    </div> <br><br><br><br><br><br><br>
+
+
+
+
+
+    <!----seventh section -- Q & A ?! -->
+    <div class="container" id="faqs">
+
+        <div class="text-center">
+
+            <p class="fs-5 fw-bold text-primary">FREQUENTLY ASKED QUESTION</p>
+            <h1 class="fs-1 fw-bold" style="color: rgb(80, 101, 142) ;">COMMON QUESTION & ANSWER</h1>
+
+        </div> <br><br><br><br>
+
+        <!-- ----------------------------------------- -->
+
+
+
+
+        <div class="row">
+
+            <div class="col-xl-5 col-lg-5  d-flex justify-content-center flex-column">
+            
+                    <button class="btn btn-outline-primary py-3 mb-4 fw-bold d-flex justify-content-between" data-aos="fade-up">Coronavirus Disease 2019 Basics<i class="fa-solid fa-arrow-right px-3"></i></button>
+
+                    <button class="btn btn-outline-primary py-3 mb-4 fw-bold d-flex justify-content-between" data-aos="fade-up">How It Spreads ?<i class="fa-solid fa-arrow-right px-3"></i></button>
+
+                    <button class="btn btn-outline-primary py-3 mb-4 fw-bold d-flex justify-content-between" data-aos="fade-up">How To Protect Yourself ?<i class="fa-solid fa-arrow-right px-3"></i></button>
+
+                    <button class="btn btn-outline-primary py-3 mb-4 fw-bold d-flex justify-content-between" data-aos="fade-up">Symptoms & Testing<i class="fa-solid fa-arrow-right px-3"></i></button>
+
+                    <button class="btn btn-outline-primary py-3 mb-4 fw-bold d-flex justify-content-between" data-aos="fade-up">Outbreak in Your Community<i class="fa-solid fa-arrow-right px-3"></i></button>
+                    
+                    <button class="btn btn-outline-primary py-3 mb-4 fw-bold d-flex justify-content-between" data-aos="fade-up">Myth-Busters of Coronavirus<i class="fa-solid fa-arrow-right px-3"></i></button>
+
+
+                
+            </div>
+
+
+
+
+            <div class="col-xl-7 col-lg-7 d-flex justify-content-center">
+
+
+                <div class="accordion w-75 w-md-75">
+
+
+                    <div class="accordion-item text-center text-primary py-3 mb-2 " data-aos="fade-up">
+                      <h5 class="fw-bold">What is the Coronavirus ?!</h5> 
+                    </div>
+
+
+
+                    <!---1-->
+                    <div class="accordion-item mb-2" data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingone-one">
+                        <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseone-one" > How Coronavirus Spread ?</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseone-one" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingone-one">
+
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                        </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!---2-->
+                    <div class="accordion-item mb-2" data-aos="fade-up">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingtwo-two">
+                        <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetwo-two" >Symptoms Of Coronavirus</button>
+                    </h2>
+                    <div id="panelsStayOpen-collapsetwo-two" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingtwo-two">
+
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                        </div>
+
+                    </div>
+                    </div>
+
+
+
+                    <!---3-->
+                    <div class="accordion-item mb-2" data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingthree-three">
+                          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsethree-three" >How to protect yourself ?</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsethree-three" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingthree-three">
+  
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                            </div>
+  
+                        </div>
+                      </div>
+
+
+
+                    <!---4-->
+                    <div class="accordion-item mb-2" data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingfour-four">
+                            <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour-four" >Treatment for Coronavirus</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsefour-four" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour-four">
+
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque. 
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+
+                    <!---5-->
+                    <div class="accordion-item mb-2" data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingfive-five">
+                            <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive-five" >Myth-Busters of Coronavirus</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsefive-five" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfive-five">
+
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                                </div>
+                        </div>
+                    </div>
+
+            
+
+                    <!---6-->
+                      <div class="accordion-item mb-2" data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingsix-six">
+                          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix-six" > How to deal with disease ? </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsesix-six" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingsix-six">
+  
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                            </div>
+                        </div>
+                      </div>
+
+
+
+                    <!---7-->
+                      <div class="accordion-item mb-2" data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingseven-seven">
+                          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven-seven" > What about weekness points ?</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseseven-seven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingseven-seven">
+  
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                            </div>
+                        </div>
+                      </div>
+
+
+                    <!---8-->
+                      <div class="accordion-item mb-2" data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingeight-eight">
+                          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseeight-eight" > How to avoide Coronavirus ?</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseeight-eight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingeight-eight">
+  
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                            </div>
+                        </div>
+                      </div>
+
+
+                    <!---9-->
+                      <div class="accordion-item " data-aos="fade-up">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingnine-nine">
+                          <button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsenine-nine" > Questions & Answers !</button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsenine-nine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingnine-nine">
+  
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo laborum qui laboriosam incidunt commodi ut quis aliquam facere, consectetur, molestiae eius quisquam officiis quaerat accusantium, nihil excepturi aspernatur neque.
+                            </div>
+                        </div>
+                      </div>
+
+            
+                  </div>
+            </div> <br><br>
+
+
+
+        </div>
+
+        
+    </div> <br><br><br><br><br><br><br>
+
+
+
+
+    <!----eigth section -- blog -->
+
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+
+                <p class="fs-5 fw-bold text-primary">RECENT FROM BLOG</p>
+                <h1 class="fs-1 fw-bold" style="color: rgb(80, 101, 142) ;">LATEST UPDATE</h1>
+    
+            </div> <br><br><br><br><br><br><br>
+
+
+            <div class="row d-flex justify-content-evenly">
+
+
+                <div class="col-xl-12 col-lg-12 col-md-12 mb-sm-5 card" data-aos="fade-right" style="width: 22rem; height: 26rem;">
+                    <img class="card-img-top border-5 border-bottom border-primary" style="background-color: rgb(247, 249, 254);" src="./images/blog-a.jpg" >
+                    <div class="card-body p-3">
+                    <p class="card-text text-center">
+                        <span class="fw-bold text-primary">Caring For Someone at Home :</span><br><br>
+                        Most people who get sick with<br>COVID-19 will have only mild illness<br>and should recover at home. Care<br>at home can help stop the spread of<br>COVID-19
+                    </p>
+                    </div>
+                </div>
+                
+
+                <div class="col-xl-12 col-lg-12 col-md-12 mb-sm-5 card" data-aos="fade-down" style="width: 22rem;  height: 28rem;">
+                    <img class="card-img-top border-5 border-bottom border-primary" style="background-color: rgb(247, 249, 254);" src="./images/blog-b.jpg" >
+                    <div class="card-body p-3">
+                        <p class="card-text text-center">
+                        <span class="fw-bold text-primary">15 Ways to Keep Safe and Healthy : </span><br><br>
+                        Most people who get sick with<br>COVID-19 will have only mild illness<br>and should recover at home. Care<br>at home can help stop the spread of<br>COVID-19
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-12 col-lg-12 col-md-12 mb-sm-5 card" data-aos="fade-left" style="width: 22rem; height: 26rem;">
+                        <img class="card-img-top border-5 border-bottom border-primary" style="background-color: rgb(247, 249, 254);" src="./images/blog-c.jpg" >
+                        <div class="card-body p-3">
+                            <p class="card-text text-center"><span class="fw-bold text-primary">If You Think You Are Sick :</span><br><br>
+                                Most people who get sick with<br>COVID-19 will have only mild illness<br>and should recover at home. Care<br>at home can help stop the spread of<br>COVID-19
+                            </p>
+                        </div>
+                </div>
+
+            </div> <br><br>
+
+
+        </div>
+    </div> <br><br><br><br><br>
+
+
+
+
+
+    <!----ninth section -- news -->
+    <div class="container-fluid" id="news" style="background-color: rgb(14, 37, 68); background-image: url(./images/shape-a.png); background-size: cover;">
+
+        <div class="container py-5">
+
+            <div class="text-center">
+
+                <h1 class="fs-2 fw-bold text-light ">C<i class="fa-solid fa-virus text-danger"></i>VID-19</h1> <br>
+                <P class="text-light">
+                    This website is for health information and advice about coronavirus (COVID-19), how to prevent and protect<br>yourself from disease
+                </P>
+                <p class="text-light">
+                    Learn about the government response to coronavirus on GOV.UK.
+                </p>
+    
+            </div> <br><br><br>
+
+
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-sm-5 d-flex justify-content-center">
+                    <a class="btn text-light fw-bold px-5 py-3 " style="background-color: #3b5998; " href="https://www.facebook.com/abdo.eid.9212301" target="_self">
+                        Find Me on Facebook
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-sm-5 d-flex justify-content-center">
+                    <a class="btn text-light fw-bold px-5 py-3" style="background-color: #E1306C; " href="https://www.instagram.com/abdelrahmann_eidd/" target="_self">
+                        Find Me on Instagram
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-sm-5 d-flex justify-content-center">
+                    <a class="btn text-light fw-bold px-5 py-3" style="background-color: #053eff; " href="https://www.behance.net/Abd-elrahman-eid" target="_self">
+                        Find Me on Behance
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 px-5">
+                    <ul class="text-light ">
+                        <ol class="fw-bold pb-3 p-sm-0 pb-sm-2">QUICK LINKS</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">About Corona</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">Symptoms</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">Prevention</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">Protect Yourself</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">FAQs</ol>
+                    </ul>
+                </div>
+
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 px-5">
+                    <ul class="text-light ">
+                        <ol class="fw-bold pb-3 p-sm-0 pb-sm-2">HELPFULL LINKS</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">Healthcare Professionals</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">Healthcare Facilities</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">Order Adults & Medical Conditions</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">Repare Your Family</ol>
+                    </ul>
+                </div>
+
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 px-5">
+
+                    <ul class="text-light ">
+                        <ol class="fw-bold pb-3 p-sm-0 pb-sm-2">IMPORTANT LINKS</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">WHO Website</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">CDC Website</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">NHS Website</ol>
+                        <ol class="fw-lighter pb-2 p-sm-0">Harvard Health</ol>
+                    </ul>
+                </div>
+            </div>
+
+            <br><hr class="text-light"><br>
+
+            <p class="text-light fw-lighter">
+                <span>&#169</span> 2022 COVID-19 : Templete Made by <span class="fw-bold">Abd-Elrahman Eid Mohamed ( Frontend Developer & UI / UX Designer ).</span><br><br>
+                Disclaimer : We hope you find the information presented on this website useful. This website is for general information and release awareness of (2019-nCoV) only.<br>
+                All the information based on WHO, WHO and CDC website. Information on our website is meant for awareness, if you have any adoubt please verify from respective site.
+            </p> <br>
+
+        </div>
+    </div> 
+
+
+
+    <!---- Hide and show navbar -------->
+
+        <div class="row" class="d-xl-none d-lg-none" style="width: 100vw ; height: 100vh; background-color: rgb(14, 37, 68); position: fixed; top: 0px; z-index: 999; display: none;" id="divaya">
+
+
+            <div class="col-12 text-center d-flex justify-content-center align-items-center " style=" height: 100vh;">
+
+                <div style="width: 50px; height: 50px; background-color: white; position: absolute; top: 10px; right: 30px; border-radius: 20px; cursor: pointer;" id="circle">
+
+                    <i class="fa-sharp fa-solid fa-xmark pt-2" style="font-size: 35px; color:  rgb(14, 37, 68);"></i>
+
+                </div>
+
+
+                <ul class="navbar-nav mb-lg-0 w-100" >
+
+            
+                    <li class="nav-item mb-3 ">
+                        <a class="nav-link active fw-bold text-light fs-4" style="font-size: 17px;"  href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a class="nav-link active fw-bold text-light fs-4"  href="#about" style="font-size: 17px;">About Corona</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a class="nav-link active fw-bold text-light fs-4"  href="#symptoms" style="font-size: 17px;">Symptoms</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a class="nav-link active fw-bold text-light fs-4"  href="#prevention" style="font-size: 17px;">Prevention</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a class="nav-link active fw-bold text-light fs-4"  href="#treatment" style="font-size: 17px;">Treatment</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a class="nav-link active fw-bold text-light fs-4"  href="#faqs" style="font-size: 17px;">FAQ</a>
+                    </li>
+                    <li class="nav-item mb-3">
+                        <a class="nav-link active fw-bold text-light fs-4"  href="#news" style="font-size: 17px;">News</a>
+                    </li>
+                    <a class="btn btn-light px-5 py-2 fw-bold m-auto mt-3" href="#dodont" id="do" style="border-radius: 15px; font-size: 22px; color: rgb(14, 37, 68);" >Do & Don't</a>
+                </ul>
+                <i class="fa-light fa-chart-network"></i>
+
+
+            </div>
+           
+
+        </div>
+        
+
+        
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+    <!-- Animaton on Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- Link JavaScript -->
+    <script src="./custom.js" ></script>
+
+</body>
+</html>
